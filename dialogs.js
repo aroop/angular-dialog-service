@@ -138,8 +138,8 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
 					controller : 'notifyDialogCtrl',
 					backdrop : 'static',
 					resolve : {
-						header : function() { return angular.copy(header); },
-						msg : function() { return angular.copy(msg); }
+						header : function() { return header; },
+						msg : function() { return msg; }
 					}
 				}); // end modal.open
 			}, // end notify
