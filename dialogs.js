@@ -111,6 +111,7 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
 				return $modal.open({
 					templateUrl : '/dialogs/error.html',
 					controller : 'errorDialogCtrl',
+					backdrop : 'static',
 					resolve : {
 						header : function() { return angular.copy(header); },
 						msg : function() { return angular.copy(msg); }
@@ -122,6 +123,7 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
 				return $modal.open({
 					templateUrl : '/dialogs/wait.html',
 					controller : 'waitDialogCtrl',
+					backdrop : 'static',
 					resolve : {
 						header : function() { return angular.copy(header); },
 						msg : function() { return angular.copy(msg); },
@@ -134,9 +136,10 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
 				return $modal.open({
 					templateUrl : '/dialogs/notify.html',
 					controller : 'notifyDialogCtrl',
+					backdrop : 'static',
 					resolve : {
-						header : function() { return angular.copy(header); },
-						msg : function() { return angular.copy(msg); }
+						header : function() { return header; },
+						msg : function() { return msg; }
 					}
 				}); // end modal.open
 			}, // end notify
@@ -145,6 +148,7 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
 				return $modal.open({
 					templateUrl : '/dialogs/confirm.html',
 					controller : 'confirmDialogCtrl',
+					backdrop : 'static',
 					resolve : {
 						header : function() { return angular.copy(header); },
 						msg : function() { return angular.copy(msg); },
