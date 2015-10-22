@@ -1,0 +1,13 @@
+{
+  "name": "fm-dialogs",
+  "dependencies": {
+    "angular": "1.4.7",
+    "angular-bootstrap": "0.14.2",
+    "angular-sanitize": "1.4.7",
+    "bootstrap": "3.3.4"
+  },
+  "main": [
+    "dialogs.css",
+    "dialogs.js"
+  ]
+}
